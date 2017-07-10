@@ -1,0 +1,26 @@
+=> {[31m[1;31m"[0m[31mresults[1;31m"[0m[31m[0m=>
+  [{[31m[1;31m"[0m[31maddress_components[1;31m"[0m[31m[0m=>
+     [{[31m[1;31m"[0m[31mlong_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mSheridan Road[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mshort_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mSheridan Rd[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mtypes[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31mroute[1;31m"[0m[31m[0m]},
+      {[31m[1;31m"[0m[31mlong_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mEvanston[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mshort_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mEvanston[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mtypes[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31mlocality[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpolitical[1;31m"[0m[31m[0m]},
+      {[31m[1;31m"[0m[31mlong_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mEvanston Township[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mshort_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mEvanston Township[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mtypes[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31madministrative_area_level_3[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpolitical[1;31m"[0m[31m[0m]},
+      {[31m[1;31m"[0m[31mlong_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mCook County[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mshort_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mCook County[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mtypes[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31madministrative_area_level_2[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpolitical[1;31m"[0m[31m[0m]},
+      {[31m[1;31m"[0m[31mlong_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mIllinois[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mshort_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mIL[1;31m"[0m[31m[0m,
+       [31m[1;31m"[0m[31mtypes[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31madministrative_area_level_1[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpolitical[1;31m"[0m[31m[0m]},
+      {[31m[1;31m"[0m[31mlong_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mUnited States[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mshort_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mUS[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mtypes[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31mcountry[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mpolitical[1;31m"[0m[31m[0m]},
+      {[31m[1;31m"[0m[31mlong_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m60208[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mshort_name[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m60208[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mtypes[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31mpostal_code[1;31m"[0m[31m[0m]}],
+    [31m[1;31m"[0m[31mformatted_address[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mSheridan Rd & Foster St, Evanston, IL 60208, USA[1;31m"[0m[31m[0m,
+    [31m[1;31m"[0m[31mgeometry[1;31m"[0m[31m[0m=>
+     {[31m[1;31m"[0m[31mlocation[1;31m"[0m[31m[0m=>{[31m[1;31m"[0m[31mlat[1;31m"[0m[31m[0m=>[1;35m42.0538387[0m, [31m[1;31m"[0m[31mlng[1;31m"[0m[31m[0m=>[1;35m-87.67721[0m},
+      [31m[1;31m"[0m[31mlocation_type[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mGEOMETRIC_CENTER[1;31m"[0m[31m[0m,
+      [31m[1;31m"[0m[31mviewport[1;31m"[0m[31m[0m=>
+       {[31m[1;31m"[0m[31mnortheast[1;31m"[0m[31m[0m=>{[31m[1;31m"[0m[31mlat[1;31m"[0m[31m[0m=>[1;35m42.0551876802915[0m, [31m[1;31m"[0m[31mlng[1;31m"[0m[31m[0m=>[1;35m-87.67586101970849[0m},
+        [31m[1;31m"[0m[31msouthwest[1;31m"[0m[31m[0m=>{[31m[1;31m"[0m[31mlat[1;31m"[0m[31m[0m=>[1;35m42.0524897197085[0m, [31m[1;31m"[0m[31mlng[1;31m"[0m[31m[0m=>[1;35m-87.67855898029151[0m}}},
+    [31m[1;31m"[0m[31mpartial_match[1;31m"[0m[31m[0m=>[1;36mtrue[0m,
+    [31m[1;31m"[0m[31mplace_id[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mEjBTaGVyaWRhbiBSZCAmIEZvc3RlciBTdCwgRXZhbnN0b24sIElMIDYwMjA4LCBVU0E[1;31m"[0m[31m[0m,
+    [31m[1;31m"[0m[31mtypes[1;31m"[0m[31m[0m=>[[31m[1;31m"[0m[31mintersection[1;31m"[0m[31m[0m]}],
+ [31m[1;31m"[0m[31mstatus[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mOK[1;31m"[0m[31m[0m}
