@@ -26,7 +26,7 @@ class ForecastController < ApplicationController
 
     @current_temperature = parsed_data["currently"]["temperature"]
     @current_summary = parsed_data["currently"]["summary"]
-    #@summary_of_next_sixty_minutes = parsed_data["minutely"]["summary"]
+    @summary_of_next_sixty_minutes = parsed_data["minutely"]["summary"]
     #@summary_of_next_sixty_minutes = parsed_data["minutely"]["summary"]
     @summary_of_next_several_hours = parsed_data["hourly"]["summary"]
 
