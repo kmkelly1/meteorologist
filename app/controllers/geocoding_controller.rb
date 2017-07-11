@@ -18,9 +18,9 @@ class GeocodingController < ApplicationController
     
     @street_address_with_spaces = []
     
-    @street_address = @street_address.split
+    @street_address_to_array = @street_address.split
     
-    @street_address.each do |word|
+    @street_address_to_array.each do |word|
       new_word = word + "+"
       @street_address_with_spaces.push(new_word)
     end
@@ -33,7 +33,7 @@ class GeocodingController < ApplicationController
       # latitude = parsed_data["results"][0]["geometry"]["location"]["lat"]
       # longitude = parsed_data["results"][0]["geometry"]["location"]["lng"]
     
-
+    
     @latitude = parsed_data["results"][0]["geometry"]["location"]["lat"]
 
     @longitude = parsed_data["results"][0]["geometry"]["location"]["lng"]
