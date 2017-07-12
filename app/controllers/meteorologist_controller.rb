@@ -36,10 +36,11 @@ class MeteorologistController < ApplicationController
     
     @url2 = "https://api.darksky.net/forecast/e2aa6d7072480eda19a1483312f8c884/"
 
-    @latitude = parsed_data["results"][0]["geometry"]["location"]["lat"].to_s
+    # @latitude = parsed_data["results"][0]["geometry"]["location"]["lat"].to_s
+    @latitude = parsed_data.dig("results",0,"geometry","location","lat").to_s
 
-    @longitude = parsed_data["results"][0]["geometry"]["location"]["lng"].to_s
-    
+    # @longitude = parsed_data["results"][0]["geometry"]["location"]["lng"].to_s
+    @longitude = parsed_data.dig("results",0,"geometry","location","lng").to_s
     @darksky_url = @url2 + @latitude + "," + @longitude
     
     parsed_data2 = JSON.parse(open(@darksky_url).read)

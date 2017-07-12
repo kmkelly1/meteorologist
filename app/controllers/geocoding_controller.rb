@@ -34,9 +34,10 @@ class GeocodingController < ApplicationController
       # longitude = parsed_data["results"][0]["geometry"]["location"]["lng"]
     
     
-    @latitude = parsed_data["results"][0]["geometry"]["location"]["lat"]
-
-    @longitude = parsed_data["results"][0]["geometry"]["location"]["lng"]
+    # @latitude = parsed_data["results"][0]["geometry"]["location"]["lat"]
+    @latitude = parsed_data.dig("results",0,"geometry","location","lat")
+    # @longitude = parsed_data["results"][0]["geometry"]["location"]["lng"]
+    @longitude = parsed_data.dig("results",0,"geometry","location","lng")
 
     render("geocoding/street_to_coords.html.erb")
   end
