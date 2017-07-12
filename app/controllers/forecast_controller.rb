@@ -27,7 +27,6 @@ class ForecastController < ApplicationController
     @current_temperature = parsed_data.dig("currently","temperature")
     @current_summary = parsed_data.dig("currently","summary")
     @summary_of_next_sixty_minutes = parsed_data.dig("minutely","summary")
-    # @summary_of_next_sixty_minutes = parsed_data.dig("minutely","summary")
     @summary_of_next_several_hours = parsed_data.dig("hourly","summary")
 
     @summary_of_next_several_days = parsed_data.dig("daily","summary")

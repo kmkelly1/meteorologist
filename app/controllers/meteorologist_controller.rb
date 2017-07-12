@@ -17,6 +17,8 @@ class MeteorologistController < ApplicationController
 
     @url = "https://maps.googleapis.com/maps/api/geocode/json?address="
     
+    @street_address = @street_address.to_s.gsub(/[^a-z0-9\s]/i, "")
+    
     @street_address_with_spaces = []
     
     @street_address_to_array = @street_address.split
@@ -31,8 +33,7 @@ class MeteorologistController < ApplicationController
     @google_url = @url + @street_address_with_spaces + "&=AIzaSyDNqz-qn2W4rtt6pVaNwlw3nWYOgyzDHiw"
     
     parsed_data = JSON.parse(open(@google_url).read)
-      # latitude = parsed_data["results"][0]["geometry"]["location"]["lat"]
-      # longitude = parsed_data["results"][0]["geometry"]["location"]["lng"]
+
     
     @url2 = "https://api.darksky.net/forecast/e2aa6d7072480eda19a1483312f8c884/"
 
