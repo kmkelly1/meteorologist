@@ -27,7 +27,7 @@ class GeocodingController < ApplicationController
     
     @street_address_with_spaces = @street_address_with_spaces.to_s
     
-    @google_url = @url + @street_address_with_spaces
+    @google_url = @url + @street_address_with_spaces + "&"
     
     parsed_data = JSON.parse(open(@google_url).read)
       # latitude = parsed_data["results"][0]["geometry"]["location"]["lat"]
