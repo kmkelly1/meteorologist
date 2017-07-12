@@ -41,21 +41,22 @@ class MeteorologistController < ApplicationController
 
     # @longitude = parsed_data["results"][0]["geometry"]["location"]["lng"].to_s
     @longitude = parsed_data.dig("results",0,"geometry","location","lng").to_s
+    
     @darksky_url = @url2 + @latitude + "," + @longitude
     
     parsed_data2 = JSON.parse(open(@darksky_url).read)
 
     
 
-    @current_temperature = parsed_data2["currently"]["temperature"]
+    @current_temperature = parsed_data2.dig("currently","temperature")
 
-    @current_summary = parsed_data2["currently"]["summary"]
+    @current_summary = parsed_data2.dig("currently","summary")
 
-    @summary_of_next_sixty_minutes = parsed_data2["minutely"]["summary"]
+    @summary_of_next_sixty_minutes = parsed_data2.dig("minutely","summary")
 
-    @summary_of_next_several_hours = parsed_data2["hourly"]["summary"]
+    @summary_of_next_several_hours = parsed_data2.dig("hourly","summary")
 
-    @summary_of_next_several_days = parsed_data2["daily"]["summary"]
+    @summary_of_next_several_days = parsed_data2.dig("daily","summary")
 
     render("meteorologist/street_to_weather.html.erb")
   end
