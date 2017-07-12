@@ -17,7 +17,7 @@ class MeteorologistController < ApplicationController
 
     @url = "https://maps.googleapis.com/maps/api/geocode/json?address="
     
-    @street_address = @street_address.to_s.gsub(/[^a-z0-9\s]/i, "")
+    # @street_address = @street_address.to_s.gsub(/[^a-z0-9\s]/i, "")
     
     @street_address_with_spaces = []
     
@@ -30,7 +30,7 @@ class MeteorologistController < ApplicationController
     
     @street_address_with_spaces = @street_address_with_spaces.to_s
     
-    @google_url = @url + @street_address_with_spaces + "&=AIzaSyDNqz-qn2W4rtt6pVaNwlw3nWYOgyzDHiw"
+    @google_url = @url + @street_address_with_spaces + "&key=AIzaSyDNqz-qn2W4rtt6pVaNwlw3nWYOgyzDHiw"
     
     parsed_data = JSON.parse(open(@google_url).read)
 
